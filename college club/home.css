@@ -1,0 +1,84 @@
+* {
+
+    color: #151515;
+    font-weight: 400;
+    font-family: 'EB Garamond', serif;
+}
+
+html,
+body {
+    overflow-x: hidden;
+    height: 100%;
+}
+
+body {
+    position: relative;
+    background-image: url(http://api.thumbr.it/whitenoise-361x370.png?background=ffffffff&noise=5c5c5c&density=13&opacity=62);
+}
+
+
+
+.CTA {
+    display: inline-block;
+    margin: 30px auto;
+    border: 4px solid #151515;
+    border-radius: 12px;
+    background: #72515100;
+    padding: 5px 20px;
+    font-weight: 600;
+    font-size: 1.5em;
+    text-decoration: none;
+}
+
+.CTA:hover {
+    border: 2px solid #151515;
+    background: #151515;
+    color: #fff;
+    transition: .3s;
+}
+
+.home-content {
+    margin: auto;
+    align-self: center;
+    width: 70%;
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: 400;
+}
+
+.date {
+    font-weight: 800;
+    font-size: 12em;
+    margin: auto;
+    padding-left: 10%;
+    padding-right: 10%;
+    opacity: 0.9;
+
+}
+
+@media(max-width: 700px) {
+    .home-content {
+        margin: 0;
+        align-self: center;
+        width: 100%;
+        text-align: center;
+        font-size: 1em;
+        font-weight: 400;
+    }
+
+    .date {
+        margin-top: 10%;
+        font-size: 10em;
+    }
+
+    #des {
+        width: 80%;
+        margin: 0 auto
+    }
+
+    .CTA {
+        border: 2px solid #151515;
+        border-radius: 12px;
+    }
+
+}

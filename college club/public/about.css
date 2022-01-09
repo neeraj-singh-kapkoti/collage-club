@@ -1,0 +1,39 @@
+* {
+
+    color: #151515;
+    font-weight: 400;
+    font-family: 'EB Garamond', serif;
+}
+
+html,
+body {
+    overflow-x: hidden;
+    height: 100%;
+    position: relative;
+    background-image: url(http://api.thumbr.it/whitenoise-361x370.png?background=ffffffff&noise=5c5c5c&density=13&opacity=62);
+}
+
+
+h2 {
+    /* font-size: 1.5em; */
+    font-weight: 600;
+}
+
+#about {
+    padding: 10px;
+    font-size: 1.2em;
+    margin: 3%;
+}
+#about a{
+    color: blue;
+
+}
+#about a:hover{
+    color: red;
+    font-size: 1.1em;
+    font-weight: 600;
+
+}
+h2{
+    border-bottom: 2px solid #ddd;
+}

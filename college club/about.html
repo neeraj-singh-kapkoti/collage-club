@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>BLUE SCREEN || About</title>
+    <link rel="stylesheet" href="about.css">
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.6.0/font/bootstrap-icons.css">
+</head>
+
+<body>
+    <section class="header">
+
+        <div class="wrapper">
+            <div class="logo"><img src="images/logo 2.png"></div>
+            <nav>
+                <div class="nav-links" id="navLinks">
+                    <i class="bi bi-x" onclick="hideMenu()"></i>
+
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="register.html">Register</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+
+
+                </div>
+                <!-- <i class="fa fa-times" ></i> -->
+
+                <i class="bi bi-list" onclick="showMenu()"></i>
+            </nav>
+            <!-- <i class="fa fa-bars"></i> -->
+
+        </div>
+        <div id="about">
+            <h2>
+                About This Club
+            </h2>
+            <p >
+                After spending quite some time at this college, we've discovered that there are very few coding and
+                development-related activities.
+                In addition, there is a severe absence of productive interaction between the seniors and juniors.
+
+                There is also no environment here to foster activities that should ideally be a part of the Computer
+                Science students' daily routine.
+
+                As a result, we believe it is critical to provide an environment in which students may learn, develop,
+                and explore new ideas together. Hence, we decided to start a coding club so that students with talent
+                can participate in such activities while simultaneously encouraging a culture of collective development.
+
+                Right now, we are quite excited and have a lot of plans for the club; for example, we plan to construct
+                a few websites, host hackathons, hold coding competitions, and so on (all of this is contingent on the
+                participation of members).
+                To be honest, everything is still in beta, and we're just trying something new. Depending on how well it
+                goes, we'll keep doing it.
+
+                All things considered, we have everyone's best interests at heart.
+                If you share our sentiments and want things to change for the better, we invite you to join us in this
+                group.
+                <h3>Note:</h3>
+                We're still in the early stages, so we'll need some volunteers to help with some key club
+                responsibilities.
+                If you are interested, please fill out the <a href="register.html">registration form</a> .
+
+                <h3>Eligibility:</h3>
+            <ul>
+                <li>No more than 2 standing backlogs.
+                </li>
+                <li>Must be a student of CSE or ECE department</li>
+                <li>Must have secured a minimum of 55% marks in their class 12th and 10th </li>
+                <li>Elementary proficiency in HTML,CSS and JavaScript.</li>
+                <li>Proficient with at least one programming language.</li>
+                <li>Decent communication skills</li>
+
+            </ul>
+
+            </p>
+
+        </div>
+    </section>
+
+    <!-- js for toggle menu -->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+    </script>
+
+</body>
+
+</html>
