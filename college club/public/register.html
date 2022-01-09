@@ -88,32 +88,27 @@
 
 
     <!-- Initialize firebase -->
-    <!-- The core Firebase JS SDK is always required and must be listed first -->
-    <script src="https://www.gstatic.com/firebasejs/7.13.1/firebase-app.js"></script>
-
-    <!-- TODO: Add SDKs for Firebase products that you want to use -->
-    <script src="https://www.gstatic.com/firebasejs/7.13.1/firebase-storage.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/7.13.1/firebase-database.js"></script>
-    <script>
+    <script type="module">
+      // Import the functions you need from the SDKs you need
+      import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.2/firebase-app.js";
+      // TODO: Add SDKs for Firebase products that you want to use
+      // https://firebase.google.com/docs/web/setup#available-libraries
+    
+      // Your web app's Firebase configuration
       const firebaseConfig = {
-        apiKey: "AIzaSyBtyeMxjEQj9L1krJinQdYTa0s-U2sBkTc",
-        authDomain: "club-web-2d0f1.firebaseapp.com",
-        databaseURL: "https://club-web-2d0f1-default-rtdb.firebaseio.com",
-        projectId: "club-web-2d0f1",
-        storageBucket: "club-web-2d0f1.appspot.com",
-        messagingSenderId: "364374480610",
-        appId: "1:364374480610:web:bb109d7993a53cada4f0bb",
-        measurementId: "G-JQ2CCJ2SE8"
+        apiKey: "AIzaSyAl5muH_3x07ubNZomL-TrPsG8mxt_gis8",
+        authDomain: "club22-d87fc.firebaseapp.com",
+        databaseURL: "https://club22-d87fc-default-rtdb.firebaseio.com",
+        projectId: "club22-d87fc",
+        storageBucket: "club22-d87fc.appspot.com",
+        messagingSenderId: "49899183141",
+        appId: "1:49899183141:web:b8100405120bfd4b5173cc"
       };
-
-      firebase.initializeApp(firebaseConfig);
+    
+      // Initialize Firebase
+      const app = initializeApp(firebaseConfig);
     </script>
-
-    <!--  -->
-
-    <script>
-
-
+<script>
       var files = [];
       var file;
       document.getElementById("files").addEventListener("change", function (e) {
@@ -212,12 +207,7 @@
         navLinks.style.right = "-200px";
       }
     </script>
-
-
-    </script>
-
-
-
+</section>
 </body>
 
 </html>
